@@ -17,13 +17,35 @@ https://youtu.be/xvFZjo5PgG0?si=RVLVEMozOz0i8xKP
 
 ## Como rodar
 
-(Depois ajeito sobre o env)
+Para utilizar o código deste repositório, siga as instruções a seguir:
+
+Crie um ambiente virtual do Python:
+
+``` shell
+python3 -m venv env
+```
+
+Ative o ambiente virtual:
+
+``` shell
+# No Windows
+env\Scripts\activate
+
+# No Linux/MacOS
+source venv/bin/activate
+```
+
+Instale as dependências com:
+
+``` shell
+python3 -m pip install -r requirements.txt --upgrade
+```
 
 `db.ipynb`:
 - Baixar o Dataset original do Kaggle (link: [kaggle.com](https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information/data?select=song_lyrics.csv))
 - Rodar os códigos necessários para poder ter acesso ao banco de dados filtrado de acordo com a necessidade do projeto.
 
 \
-``main.py:``
+``main.ipynb:``
 - Passo 1
 - Passo 2
