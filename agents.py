@@ -45,7 +45,7 @@ class PlaylistGenerator:
             }
         )
 
-        self.last_proposition =  f"{response}"
+        self.last_proposition =  f"{response.text}"
 
         return response
     
@@ -100,12 +100,14 @@ class Validator():
         {proposed_playlist}
         
         Faça uma crítica construtiva sobre a playlist recebida, avalia e proponha sugestões de melhorias.
+        Explique as suas críticas em 2 parágrafos no máximo!! Seja breve e não formate sua resposta de maneira sofisticada.
         """
 
         response = client.models.generate_content(
             model="gemini-2.0-flash",
             contents=prompt,
             config={
+                'max_output_tokens' : 200,
                 'temperature': 1.0
             }
         )
