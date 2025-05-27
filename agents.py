@@ -5,17 +5,13 @@ from models import FormatoResposta
 client = genai.Client(api_key=os.getenv('GEMINI_API_KEY'))
 
 class PlaylistGenerator:
-    def __init__(self, config, model):
+    def __init__(self):
         """
         Playlist generator Agent base on user's input of desired playlist model. \\
         
         """
         # Ultima proposta feita por ESTE agente
         self.last_proposition = ""
-
-        # Config e model for LLM (Gemini)
-        self.model_gemini = model
-        self.config_gemini = config
 
     def initialRequest(self, request: str) -> str:
         """
@@ -87,14 +83,10 @@ class PlaylistGenerator:
 # =================================================================================
 
 class Validator():
-    def __init__(self, request: str, config, model):
+    def __init__(self, request: str):
 
         # Request inicial do usuário
         self.request = request
-
-        # Config e model for LLM (Gemini)
-        self.config = config
-        self.model = model
 
     def refactorRequest(self, proposed_playlist: str) -> str:
 
