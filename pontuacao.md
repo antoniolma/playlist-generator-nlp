@@ -1,5 +1,5 @@
-gemini: 4
+gemini: 20
 
-agentes: 4
+agentes: 14
 
 bert: 0
