@@ -1,4 +1,4 @@
-# Projeto - 
+# Projeto - Gerador de Playlists
 
 Insper 2025.1
 
@@ -11,9 +11,14 @@ Insper 2025.1
 
 ## Descrição do Projeto
 
-Work in progress...
+São geradas 3 playlists de músicas a partir de um pedido do usuário, cada uma com 10 músicas e geradas de uma maneira diferente. Queríamos saber qual seria a melhor estratégia considerando os dados utilizados (veja ![tratamento dos dados](db.ipynb)) e o tempo gasto.
 
-https://youtu.be/xvFZjo5PgG0?si=RVLVEMozOz0i8xKP
+Métodos utilizados:
+- Requisição simples: uma requisição única para o Gemini
+- Agentes: um agente especialista em construção de playlists e um especialista em opinar conversando
+- Modelo BERT
+
+Após isso, foi feito uma validação de qual seria o melhor modelo pedindo para várias pessoas escolherem qual playlist elas mais gostaram. Veja os resultados em ![pontuação](pontuacao.md)
 
 ## Como rodar
 
