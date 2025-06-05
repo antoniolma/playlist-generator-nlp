@@ -54,3 +54,9 @@ python3 -m pip install -r requirements.txt --upgrade
 ``main.ipynb:``
 - Passo 1
 - Passo 2
+
+## Referências
+
+[Referência 1](https://github.com/alexdjulin/spotify-playlist-generator)
+
+[Referência 2](https://github.com/daytonaio/sample-python-ai-playlist-generator)
